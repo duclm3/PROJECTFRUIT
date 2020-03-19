@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-Sep-2019 20:07:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="bkap.user.entity.Users" table="Users" schema="dbo" catalog="FRUIT" optimistic-lock="version">
+        <id name="userId" type="integer">
+            <column name="UserId" length="10" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="UserName" />
+        </property>
+        <property name="passW" type="string">
+            <column name="passW" length="20" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="20" />
+        </property>
+        <property name="addresss" type="string">
+            <column name="Addresss" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="11" />
+        </property>
+        <property name="userStatus" type="java.lang.Boolean">
+            <column name="UserStatus" />
+        </property>
+        <set name="orderses" table="Orders" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="UserId" length="10" />
+            </key>
+            <one-to-many class="bkap.user.entity.Orders" />
+        </set>
+    </class>
+</hibernate-mapping>

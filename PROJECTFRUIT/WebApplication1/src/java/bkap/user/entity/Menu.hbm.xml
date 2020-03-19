@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-Sep-2019 20:07:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="bkap.user.entity.Menu" table="Menu" schema="dbo" catalog="FRUIT" optimistic-lock="version">
+        <id name="menuId" type="int">
+            <column name="MenuId" />
+            <generator class="identity" />
+        </id>
+        <property name="menuName" type="string">
+            <column name="MenuName" />
+        </property>
+        <property name="menuStatus" type="java.lang.Boolean">
+            <column name="menuStatus" />
+        </property>
+    </class>
+</hibernate-mapping>

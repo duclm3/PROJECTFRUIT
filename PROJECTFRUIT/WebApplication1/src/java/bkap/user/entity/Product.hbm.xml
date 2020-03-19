@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-Sep-2019 20:07:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="bkap.user.entity.Product" table="Product" schema="dbo" catalog="FRUIT" optimistic-lock="version">
+        <id name="productId" type="string">
+            <column name="ProductId" length="50" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="groupProduct" class="bkap.user.entity.GroupProduct" fetch="select" lazy="false">
+            <column name="GroupProduct_Id" length="20" />
+        </many-to-one>
+        <property name="nameProduct" type="string">
+            <column name="NameProduct" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="Price" precision="53" scale="0" />
+        </property>
+        <property name="imageLink" type="string">
+            <column name="ImageLink" length="100" />
+        </property>
+        <property name="descriptions" type="string">
+            <column name="Descriptions" />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="Quantity" />
+        </property>
+        <property name="proStatus" type="java.lang.Boolean">
+            <column name="proStatus" />
+        </property>
+        <set name="orderDetails" table="OrderDetail" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ProductId" length="5" not-null="true" />
+            </key>
+            <one-to-many class="bkap.user.entity.OrderDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

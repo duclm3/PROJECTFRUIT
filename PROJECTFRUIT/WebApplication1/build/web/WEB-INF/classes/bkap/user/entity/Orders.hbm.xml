@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-Sep-2019 20:07:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="bkap.user.entity.Orders" table="Orders" schema="dbo" catalog="FRUIT" optimistic-lock="version">
+        <id name="orderId" type="int">
+            <column name="OrderId" />
+            <generator class="identity" />
+        </id>
+        <property name="customerName" type="string">
+            <column name="CustomerName" />
+        </property>
+        <property name="amount" type="java.lang.Double">
+            <column name="Amount" precision="53" scale="0" />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="Quantity" />
+        </property>
+        <property name="addresss" type="string">
+            <column name="Addresss" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="20" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="11" />
+        </property>
+        <property name="orderStatus" type="int">
+            <column name="OrderStatus" />
+        </property>
+        <property name="orderDate" type="string">
+            <column name="OrderDate" />
+        </property>
+        <property name="listProduct" type="string">
+            <column name="ListProduct" />
+        </property>
+        <set name="orderDetails" table="OrderDetail" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="OrderId" not-null="true" />
+            </key>
+            <one-to-many class="bkap.user.entity.OrderDetail" />
+        </set>
+    </class>
+</hibernate-mapping>
