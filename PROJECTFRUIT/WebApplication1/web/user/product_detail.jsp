@@ -59,9 +59,9 @@
             <!-- End Logo --> </div>
           <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12 hidden-xs">
             <div class="search-box">
-              <form action="cat" method="POST" id="search_mini_form" name="Categories">
-                <input type="text" placeholder="Tìm kiếm..." maxlength="70" name="search" id="search">
-                <button type="button" class="search-btn-bg"><span class="glyphicon glyphicon-search"></span>&nbsp;</button>
+              <form action="getNameProduct.htm" method="POST" id="search_mini_form" name="Categories">
+                <input type="text" placeholder="Tìm kiếm..." maxlength="70" id="search" name="nameproduct">
+                <button type="submit" class="search-btn-bg" ><span class="glyphicon glyphicon-search"></span>&nbsp;</button>
               </form>
             </div>
           </div>
@@ -485,7 +485,7 @@
                      <div class="item">
                         <div class="item-inner">
                           <div class="item-img">
-                            <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="product_detail.html"><img alt="Retis lapen casen" src="${pro.imageLink}"></a>
+                            <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="getOneProduct.htm?productId=${pro.productId}"><img alt="Retis lapen casen" src="${pro.imageLink}"></a>
                               <div class="new-label new-top-right">new</div>
                               <div class="box-hover">
                                 <ul class="add-to-links">
@@ -496,7 +496,7 @@
                           </div>
                           <div class="item-info">
                             <div class="info-inner">
-                              <div class="item-title"><a title="Retis lapen casen" href="product_detail.html">${pro.nameProduct}</a></div>
+                              <div class="item-title"><a title="Retis lapen casen" href="getOneProduct.htm?productId=${pro.productId}">${pro.nameProduct}</a></div>
                               <div class="rating">
                                 <div class="ratings">
                                   <div class="rating-box">
@@ -548,7 +548,7 @@
                      <div class="item">
                         <div class="item-inner">
                           <div class="item-img">
-                            <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="product_detail.html"><img alt="Retis lapen casen" src="${pro.imageLink}"></a>
+                            <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="getOneProduct.htm?productId=${pro.productId}"><img alt="Retis lapen casen" src="${pro.imageLink}"></a>
                               <div class="new-label new-top-right">new</div>
                               <div class="box-hover">
                                 <ul class="add-to-links">
@@ -559,7 +559,7 @@
                           </div>
                           <div class="item-info">
                             <div class="info-inner">
-                              <div class="item-title"><a title="Retis lapen casen" href="product_detail.html">${pro.nameProduct}</a></div>
+                              <div class="item-title"><a title="Retis lapen casen" href="getOneProduct.htm?productId=${pro.productId}">${pro.nameProduct}</a></div>
                               <div class="rating">
                                 <div class="ratings">
                                   <div class="rating-box">

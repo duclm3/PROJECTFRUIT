@@ -1,4 +1,7 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f" %>
+
+<%@taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,21 +11,22 @@
 
 		<meta name="description" content="User login page" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
+        
 		<!-- bootstrap & fontawesome -->
-		<link rel="stylesheet" href="Admin/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="Admin/font-awesome/4.2.0/css/font-awesome.min.css" />
-
+                <link href="../Admin/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+                <link href="../Admin/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+		
+                
 		<!-- text fonts -->
-		<link rel="stylesheet" href="Admin/fonts/fonts.googleapis.com.css" />
+		<link rel="stylesheet" href="../Admin/fonts/fonts.googleapis.com.css" />
 
 		<!-- ace styles -->
-		<link rel="stylesheet" href="Admin/css/ace.min.css" />
+		<link rel="stylesheet" href="../Admin/css/ace.min.css" />
 
 		<!--[if lte IE 9]>
 			<link rel="stylesheet" href="assets/css/ace-part2.min.css" />
 		<![endif]-->
-		<link rel="stylesheet" href="Admin/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="../Admin/css/ace-rtl.min.css" />
 
 		<!--[if lte IE 9]>
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
@@ -69,7 +73,8 @@
 
 											<div class="space-6"></div>
                                                                                             ${msg}
-											<form action="adminPage.htm" method="POST">
+ 
+                                                                                            <form action="<%=request.getContextPath()%>/loginController/processLogin.htm" method="post">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-left">
@@ -81,7 +86,7 @@
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-left">
                                                                                                                     <input name="passW" type="password" placeholder="Password" style="width: 282px;padding-left: 40px;"/><span class="required" style="color: red">*</span>
-															<i class="ace-icon fa fa-lock"></i>
+                                                                                                                        <i class="ace-icon fa fa-lock"></i>
 														</span>
 													</label>
 
@@ -157,7 +162,7 @@
 		<!-- basic scripts -->
 
 		<!--[if !IE]> -->
-		<script src="Admin/js/jquery.2.1.1.min.js"></script>
+		<script src="../Admin/js/jquery.2.1.1.min.js"></script>
 
 		<!-- <![endif]-->
 

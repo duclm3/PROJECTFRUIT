@@ -65,9 +65,9 @@
             <!-- End Logo --> </div>
           <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12 hidden-xs">
             <div class="search-box">
-              <form action="cat" method="POST" id="search_mini_form" name="Categories">
-                <input type="text" placeholder="Tìm kiếm..." maxlength="70" name="search" id="search">
-                <button type="button" class="search-btn-bg"><span class="glyphicon glyphicon-search"></span>&nbsp;</button>
+              <form action="getNameProduct.htm" method="POST" id="search_mini_form" name="Categories">
+                <input type="text" placeholder="Tìm kiếm..." maxlength="70" id="search" name="nameproduct">
+                <button type="submit" class="search-btn-bg"><span class="glyphicon glyphicon-search"></span>&nbsp;</button>
               </form>
             </div>
           </div>

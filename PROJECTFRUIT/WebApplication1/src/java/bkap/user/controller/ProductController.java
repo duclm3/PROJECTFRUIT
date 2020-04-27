@@ -77,11 +77,17 @@ public class ProductController {
         ModelAndView mav  = new ModelAndView("user/product_detail");
         String name = request.getParameter("nameproduct");
         Product pro = proMod.getProductByName(name);
+        List<Product> allRD = proMod.getAllRandom();
+        List<Product> allRD1 = proMod.getAllRandom();
         if(pro == null){
            ModelAndView mav2  = new ModelAndView("user/productNotFound");
+           mav.addObject("allRD",allRD);
+           mav.addObject("allRD1",allRD1);
            return mav2;
         }else{
             mav.addObject("pro", pro);
+            mav.addObject("allRD",allRD);
+            mav.addObject("allRD1",allRD1);
             return mav;
         }
        

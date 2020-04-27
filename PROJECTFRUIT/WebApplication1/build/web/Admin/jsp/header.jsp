@@ -50,7 +50,7 @@
 							<li class="divider"></li>
 
 							<li>
-                                                            <a href="<%=request.getContextPath()%>/logout.htm" onclick="return confirm('Do you want to exit?');" >
+                                                            <a href="<%=request.getContextPath()%>/loginController/logout.htm" onclick="return confirm('Do you want to exit?');" >
 									<i class="ace-icon fa fa-power-off" ></i>
 									Logout
 								</a>

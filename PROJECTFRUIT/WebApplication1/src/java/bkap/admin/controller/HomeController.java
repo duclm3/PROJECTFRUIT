@@ -5,6 +5,7 @@
  */
 package bkap.admin.controller;
 
+import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
     @RequestMapping(value = "/home")
      public ModelAndView showHome() {
-         ModelAndView mav = new ModelAndView("Admin/jsp/home");
+        ModelAndView mav = new ModelAndView("Admin/jsp/home");
     return mav;
   }
 }

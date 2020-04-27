@@ -23,8 +23,12 @@
 
 		
 	</head>
-
-	<body class="no-skin">
+        <%
+            HttpSession sessions = request.getSession();
+            String email = (String)sessions.getAttribute("email");
+            if(email!=null){
+                %>
+                    <body class="no-skin">
         <jsp:include page="header.jsp"/>
         <div class="main-content">
 <div class="main-content-inner">
@@ -486,4 +490,12 @@
 		</script>
 	
                                 </body>
+                <%
+            }else{
+            %>
+                <a href="<%=request.getContextPath()%>/loginController/login.htm"/><h1>Please login here!</h1>
+            <%
+             }   
+        %>
+	
 </html>
