@@ -116,7 +116,7 @@
             </li>
             <li class="mega-menu"><a class="level-top" href="getAllTC.htm"><span>Trái cây</span></a>
             </li>
-            <li class="mega-menu"><a class="level-top" href="blog.html"><span>Tin tức</span></a>
+            <li class="mega-menu"><a class="level-top" href="#"><span>Tin tức</span></a>
               <div class="level0-wrapper dropdown-6col">
                 <div class="container">
                   <div class="level0-wrapper2">

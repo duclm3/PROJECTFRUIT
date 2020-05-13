@@ -70,7 +70,7 @@
 
                 <div class="page-header">
                     <h2>
-                        Enter Category information
+                       Add new group
                     </h2>
                 </div><!-- /.page-header -->
 
@@ -198,6 +198,14 @@
                         });
                     });
                 </script>
+                 <c:set var = "status" value = "${flagInsert}"/>
+                <c:choose>
+                    <c:when test ="${status=='false'}">
+                        <script language="javascript">
+                            alert('ID ${duplicateid} ĐÃ ĐƯỢC SỬ DỤNG!');
+                        </script>
+                    </c:when>
+                 </c:choose>
                 </body>
             <%
         }else{

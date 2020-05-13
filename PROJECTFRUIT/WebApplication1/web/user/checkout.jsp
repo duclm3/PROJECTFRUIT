@@ -155,27 +155,27 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="firstname">Tên của bạn</label>
-                                <f:input path="CustomerName" type="text" class="form-control" name="name" required="" style="width: 616px"/>
+                                <f:input path="CustomerName" type="text" class="form-control" name="name" required="required" style="width: 616px"/>
                             </div>
                         </div>
                         <div class="w-100"></div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="streetaddress">Địa chỉ giao hàng</label>
-                                <f:input path="Addresss" type="text" class="form-control" name="address" required="" style="width: 616px"/>
+                                <f:input path="Addresss" type="text" class="form-control" name="address" required="required" style="width: 616px"/>
                             </div>
                         </div>
                         <div class="w-100"></div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="phone">Số điện thoại</label>
-                                <f:input path="Phone" type="text" class="form-control" placeholder="" name="phone" required=""/>
+                                <f:input path="Phone" type="text" class="form-control" placeholder="" name="phone" required="required" pattern="[0-9]{10}"  title="Số điện thoại bao gồm 10 số !"/>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="emailaddress">Địa chỉ Email</label>
-                                <f:input path="Email" type="text" class="form-control" placeholder="" name="email" required=""/>
+                                <f:input path="Email" type="text" class="form-control" placeholder="" name="email" required="required"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Định dạng yêu cầu characters@characters.domain!"/>
                             </div>
                         </div>
                         <div class="w-100"></div>

@@ -300,7 +300,7 @@
                                               <div class="price-box"><span class="regular-price"><span class="price">${raucuqua.price} VNĐ</span></span></div>
                                             </div>
                                             <div class="action">
-                                                <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${raucuqua.productId}"><button class="button btn-cart" type="button"><span>Add to Cart</span></button></a>
+                                                <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${raucuqua.productId}"><button class="button btn-cart" type="button"><span>Thêm vào giỏ</span></button></a>
                                             </div>
                                           </div>
                                         </div>
@@ -342,7 +342,7 @@
                                               <div class="price-box"><span class="regular-price"><span class="price">${traicay.price} VNĐ</span></span></div>
                                             </div>
                                             <div class="action">
-                                              <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${traicay.productId}"><button class="button btn-cart" type="button"><span>Add to Cart</span></button></a>
+                                              <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${traicay.productId}"><button class="button btn-cart" type="button"><span>Thêm vào giỏ</span></button></a>
                                             </div>
                                           </div>
                                         </div>
@@ -402,7 +402,7 @@
                           <div class="price-box"><span class="regular-price"><span class="price">${traicay.price} VNĐ</span></span></div>
                         </div>
                         <div class="action">
-                            <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${traicay.productId}"><button class="button btn-cart" type="button"><span>Add to Cart</span></button></a>
+                            <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${traicay.productId}"><button class="button btn-cart" type="button"><span>Thêm vào giỏ</span></button></a>
                         </div>
                       </div>
                     </div>
@@ -459,7 +459,7 @@
                           <div class="price-box"><span class="regular-price"><span class="price">${raucuqua.price} VNĐ</span></span></div>
                         </div>
                         <div class="action">
-                            <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${raucuqua.productId}"><button class="button btn-cart" type="button"><span>Add to Cart</span></button></a>
+                            <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${raucuqua.productId}"><button class="button btn-cart" type="button"><span>Thêm vào giỏ</span></button></a>
                         </div>
                       </div>
                     </div>
@@ -661,12 +661,12 @@
                                                 <div class="pull-left">
                                                     <div class="custom pull-left">
                                                     <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="fa fa-minus">&nbsp;</i></button>
-                                                    <input type="number" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty" name="qty" max="15" min="1" >
+                                                    <input required="required" pattern="[1-15]" type="number" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty" name="qty" max="15" min="1"  >
                                                     <input type="hidden" id="productId" value="" name="productIdd" class="getId"/>
                                                     <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="fa fa-plus">&nbsp;</i></button>
                                                     </div>
                                                 </div>
-                                                <button class="button btn-cart" title="Add to Cart" type="submit">Add to Cart</button>
+                                                <button class="button btn-cart" title="Add to Cart" type="submit">Thêm vào giỏ</button>
                                         </div>
                                     </form>
                                 </div>

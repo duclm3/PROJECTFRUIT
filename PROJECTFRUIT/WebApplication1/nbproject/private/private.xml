@@ -12,19 +12,11 @@
             <file>file:/H:/BT%20Java/Project/TeamProject/PROJECTFRUIT/WebApplication1/web/Admin/jsp/groupProduct.jsp</file>
         </group>
         <group>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/controller/LoginSignController.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/Admin/jsp/home.jsp</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/controller/CartController.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/Admin/jsp/newProduct.jsp</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/Admin/jsp/updateGroup.jsp</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/admin/controller/LoginController.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/Admin/jsp/proDetail.jsp</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/entity/Cart.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/controller/ProductController.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/Admin/jsp/updateProduct.jsp</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/Admin/jsp/listaccount.jsp</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/admin/controller/HomeController.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/Admin/jsp/orders.jsp</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/model/ProductModel.java</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/entity/Product.java</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/model/LoginModel.java</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/admin/model/ProductModel.java</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/admin/controller/ProController.java</file>
         </group>
     </open-files>
 </project-private>

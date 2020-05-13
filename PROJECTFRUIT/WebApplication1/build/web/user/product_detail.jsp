@@ -117,7 +117,7 @@
             </li>
             <li class="mega-menu"><a class="level-top" href="getAllTC.htm"><span>Trái cây</span></a>
             </li>
-            <li class="mega-menu"><a class="level-top" href="blog.html"><span>Tin tức</span></a>
+            <li class="mega-menu"><a class="level-top" href="#"><span>Tin tức</span></a>
               <div class="level0-wrapper dropdown-6col">
                 <div class="container">
                   <div class="level0-wrapper2">
@@ -204,7 +204,7 @@
                             <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="fa fa-plus">&nbsp;</i></button>
                           </div>
                         </div>
-                        <button class="button btn-cart" title="Add to Cart" type="submit">Add to Cart</button>
+                        <button class="button btn-cart" title="Add to Cart" type="submit">Thêm vào giỏ</button>
                       </div>
                     </div>
                     <h5><b>
@@ -243,8 +243,8 @@
                 <div class="tab-pane fade in active" id="product_tabs_description">
                   <div class="std">
                     <p><b>${pro.descriptions}</b></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla. Donec a neque libero. Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam erat mi, rutrum at sollicitudin rhoncus, ultricies posuere erat. Duis convallis, arcu nec aliquam consequat, purus felis vehicula felis, a dapibus enim lorem nec augue.</p>
-                    <p> Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.</p>
+                    <p>Các loại  rau củ quả tươi  có thành phần dinh dưỡng tốt và nhiều nhất, không bị mất chất như các loại rau củ quả được bảo quản trong điều kiện nhiệt độ thấp. Các bà nội trợ cũng nên chú ý việc mua quá nhiều rau cùng một lúc và bảo quản trong tủ lạnh của mình vì theo thời gian, dưỡng chất sẽ mất dần đi và nó không còn đảm bảo được vị tươi ngon như ban đầu nữa. Nên mua bữa nào thì ăn hôm ấy. Một trong những địa chỉ mà tôi cảm thấy rất hài lòng khi mua thực phẩm tại đây là cửa hàng Organicfood.vn, thực phẩm ở đây rất đa dạng, dịch vụ nhanh, gọn và tiết kiệm ngoài ra, thái độ phục vụ khách hàng cũng rất tốt. Mỗi khi tôi có việc bận có thể mua thực phẩm online và sẽ có ngay đội ngũ nhân viên giao hàng mang đến tận nơi. Dù bận rộn nhưng vẫn có thực phẩm đến tận nhà để kịp thực hiện các món ăn cho gia đình.</p>
+                    <p>Chất khoáng, vitamin rất cần thiết cho cơ thể khoẻ mạnh. Với một chế độ ăn luôn bổ sung các loại rau củ quả sẽ giúp bạn luôn cảm thấy thoải mái và trong tình trạng được cung cấp đầy đủ mọi dưỡng chất.Để có được các loại  rau củ quả tươi  đảm bảo nhất, bạn có thể đến với các cửa hàng thực phẩm hữu cơ để lựa chọn cho mình những rau, củ quả tươi ngon và đảm bảo được sự an toàn tuyệt đối.Chúng tôi luôn đáp ứng đủ những yêu cầu về vệ sinh an toàn thực phẩm, hãy tin tưởng ở chúng tôi, brezza luôn đem lại cho bạn sự hài lòng.</p>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="product_tabs_tags">
@@ -478,8 +478,8 @@
                 <h2>Sản phẩm<br>
                   <em>Liên quan</em></h2>
               </div>
-              <div class="pretext">Sem vel turpis, mi vivamus wisi, velit dolor nulla vehicula elit molestie imperdiet, quo ipsum vitae fusce consequat. Amet id posuere amet, vitae vestibulum elit est maecenas sapien ut. </div>
-              <a href="#" class="view_more_bnt">View All</a> </div>
+              <div class="pretext">Ăn nhiều rau xanh và hoa quả là cách tốt nhất để… giảm béo. Rau xanh, củ quả có trong bất cứ chế độ ăn kiêng nào. Vừa được ăn ngon, vừa giảm béo, ăn rau còn làm giảm mức cholesterol và tăng axit folic trong máu, đó là ích lợi vượt trội của rau xanh.. </div>
+              <a href="#" class="view_more_bnt">Xem tất cả</a> </div>
             <div class="slider-items slider-width-col4 products-grid block-content">
                 <c:forEach items="${allRD}" var="pro">
                      <div class="item">
@@ -510,7 +510,7 @@
                                   <div class="price-box"><span class="regular-price"><span class="price">${pro.price}</span></span></div>
                                 </div>
                                 <div class="action">
-                                  <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${pro.productId}"><button class="button btn-cart" type="button"><span>Add to Cart</span></button></a>
+                                  <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${pro.productId}"><button class="button btn-cart" type="button"><span>Thêm vào giỏ</span></button></a>
                                 </div>
                               </div>
                             </div>
@@ -541,8 +541,8 @@
                 <h2>Sản phẩm<br>
                   <em>Liên quan</em></h2>
               </div>
-              <div class="pretext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Curabitur eu odio non justo euismod congue ut nec orci.</div>
-              <a href="#" class="view_more_bnt">View All</a> </div>
+              <div class="pretext">Một trong những lý do để bạn ăn trái cây hàng ngày là ngăn ngừa các bệnh tim mãn tính. Trái cây chứa ít calo và là một nguồn tuyệt vời của vitamin, khoáng chất.Trái cây đồng thời chứa chống oxy hóa và axit folic nên giúp làm giảm huyết áp, tránh bệnh tim mạch.</div>
+              <a href="#" class="view_more_bnt">Xem tất cả</a> </div>
             <div class="slider-items slider-width-col4 products-grid block-content">
             <c:forEach items="${allRD1}" var="pro">
                      <div class="item">
@@ -573,7 +573,7 @@
                                   <div class="price-box"><span class="regular-price"><span class="price">${pro.price}</span></span></div>
                                 </div>
                                 <div class="action">
-                                  <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${pro.productId}"><button class="button btn-cart" type="button"><span>Add to Cart</span></button></a>
+                                  <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${pro.productId}"><button class="button btn-cart" type="button"><span>Thêm vào giỏ</span></button></a>
                                 </div>
                               </div>
                             </div>
@@ -904,7 +904,7 @@
                                                     <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="fa fa-plus">&nbsp;</i></button>
                                                     </div>
                                                 </div>
-                                                <button class="button btn-cart" title="Add to Cart" type="submit">Add to Cart</button>
+                                                <button class="button btn-cart" title="Add to Cart" type="submit">Thêm vào giỏ</button>
                                         </div>
                                     </form>
                                 </div>

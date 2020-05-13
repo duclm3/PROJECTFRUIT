@@ -20,6 +20,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.hibernate.criterion.Order;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -54,12 +55,17 @@ public class ProController {
     }
     
     @RequestMapping(value = "/insert")
-    public String insertProduct(Product newPro){
+    public String insertProduct(Product newPro,ModelMap model){
         boolean check = proModel.insertProduct(newPro);
         if(check){
+            model.addAttribute("flagInsert",true);
             return "redirect:getAll.htm";
         }else{
-            return "Admin/jsp/error";
+            model.addAttribute("duplicateid",newPro.getProductId());
+            model.addAttribute("maxid",proModel.getMaxIdPro());
+            model.addAttribute("newPro",new Product());
+            model.addAttribute("flagInsert",false);
+            return "Admin/jsp/newProduct";
         }               
     }
     

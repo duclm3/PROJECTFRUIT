@@ -70,7 +70,7 @@
 
                 <div class="page-header">
                     <h2>
-                        Enter product information
+                       Add new product
                     </h2>
                 </div><!-- /.page-header -->
 
@@ -136,8 +136,8 @@
 
                                 <div class="col-sm-10">
                                     <f:select path="proStatus" placeholder="" class="col-xs-10 col-sm-10">
-                                        <f:option value="true" label="Active"/>
-                                        <f:option value="false" label="Inactive"/>
+                                        <f:option value="true" label="Hiện"/>
+                                        <f:option value="false" label="Ẩn"/>
                                     </f:select>
                                 </div>
 
@@ -160,19 +160,13 @@
                         </f:form>		
                     </div><!-- /.col -->
                 </div><!-- /.row --> 
-
+               
                 <jsp:include page="footer.jsp"/>
 
                 <!--[if !IE]> -->
                 <script src="../Admin/js/jquery.2.1.1.min.js"></script>
 
-                <!-- <![endif]-->
-
-                <!--[if IE]>
-<script src="assets/js/jquery.1.11.1.min.js"></script>
-<![endif]-->
-
-                <!--[if !IE]> -->
+   
                 <script type="text/javascript">
                         window.jQuery || document.write("<script src='../Admin/js/jquery.min.js'>" + "<" + "/script>");
                 </script>
@@ -222,6 +216,14 @@
                         });
                     });
                 </script>
+               <c:set var = "status" value = "${flagInsert}"/>
+                <c:choose>
+                    <c:when test ="${status=='false'}">
+                        <script language="javascript">
+                            alert('ID ${duplicateid} ĐÃ ĐƯỢC SỬ DỤNG, ID LỚN NHẤT ĐANG LÀ ${maxid}, GỢI Ý HÃY TĂNG SỐ CUỐI CỦA ID LÊN MỘT ĐƠN VỊ!');
+                        </script>
+                    </c:when>
+                 </c:choose>
                 </body>
                 <%
           }else{

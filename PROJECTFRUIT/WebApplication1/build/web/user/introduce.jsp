@@ -109,11 +109,11 @@
           <ul id="nav" class="hidden-xs">
             <li class="level0 parent drop-menu" id="nav-home"><a href="<%=request.getContextPath()%>/proController/getAll.htm" class="level-top"><span>Home</span></a>
             </li>
-            <li class="mega-menu"><a class="level-top" href="getAllRCQ.htm"><span>Rau củ quả</span></a>
+            <li class="mega-menu"><a class="level-top" href="<%=request.getContextPath()%>/proController/getAllRCQ.htm"><span>Rau củ quả</span></a>
             </li>
-            <li class="mega-menu"><a class="level-top" href="getAllTC.htm"><span>Trái cây</span></a>
+            <li class="mega-menu"><a class="level-top" href="<%=request.getContextPath()%>/proController/getAllTC.htm"><span>Trái cây</span></a>
             </li>
-            <li class="mega-menu"><a class="level-top" href="blog.html"><span>Tin tức</span></a>
+            <li class="mega-menu"><a class="level-top" href="#"><span>Tin tức</span></a>
               <div class="level0-wrapper dropdown-6col">
                 <div class="container">
                   <div class="level0-wrapper2">
@@ -140,7 +140,7 @@
         <div class="col-xs-12">
           <ul>
             <li class="home"> <a title="Go to Home Page" href="http://htmldemo.magikthemes.com/ecommerce/brezza-html-template/fruit/index.html">Home</a> <span>/</span> </li>
-            <li class="category1601"> <strong>About Us</strong> </li>
+            <li class="category1601"> <strong>Về chúng tôi</strong> </li>
           </ul>
         </div>
       </div>
@@ -155,7 +155,7 @@
         <section class="col-sm-9">
         <div class="col-main">
           <div class="page-title">
-            <h2>About Us</h2>
+            <h2>Về chúng tôi</h2>
           </div>
           <div class="static-contain">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>

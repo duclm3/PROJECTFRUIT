@@ -98,21 +98,33 @@
                         <td>${pro.groupProduct.groupName}</td>
                         <td>${pro.quantity}</td>
                         <td>${pro.descriptions}</td>
-                        <td>${pro.proStatus}</td>
+                        <td>
+                        <c:set var = "status" value = "${pro.proStatus}"/>
+                        <c:choose>
+                            <c:when test ="${status=='true'}">
+                                Hiện
+                                <br />
+                            </c:when>
+                            <c:otherwise>
+                                Ẩn
+                                <br />
+                            </c:otherwise>
+                        </c:choose>
+                        </td>
 
                                 <td>
                                         <div class="hidden-sm hidden-xs action-buttons">
-                                                <a class="link-quickview" data-toggle="modal" data-id="${pro.productId}" href='javascript:void(0)'>
+<!--                                                <a class="link-quickview" data-toggle="modal" data-id="${pro.productId}" href='javascript:void(0)'>
                                                         <i class="ace-icon fa fa-search-plus bigger-130"></i>
-                                                </a>
+                                                </a>-->
 
                                                 <a class="green" href="initUpdate.htm?productId=${pro.productId}">
                                                         <i class="ace-icon fa fa-pencil bigger-130"></i>
                                                 </a>
 
-                                                <a class="red" href="deleteProduct.htm?productId=${pro.productId}">
+<!--                                                <a class="red" href="deleteProduct.htm?productId=${pro.productId}">
                                                         <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                                </a>
+                                                </a>-->
                                         </div>
                                 </td>
                         </tr>
@@ -141,13 +153,7 @@
                                                                         </a>
                                                                 </li>
 
-                                                                <li>
-                                                                        <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-                                                                                <span class="red">
-                                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                                </span>
-                                                                        </a>
-                                                                </li>
+                                                              
                                                         </ul>
                                                 </div>
                                         </div>

@@ -56,7 +56,7 @@
 
 <div class="page-header">
     <h2>
-        Enter product information
+        Change product information
     </h2>
 </div>
 
@@ -115,8 +115,8 @@
                         <f:label path="proStatus" class="col-sm-2 control-label no-padding-right" for="form-field-1"> Status </f:label>
                         <div class="col-sm-10">
                                 <f:select path="proStatus" placeholder="" class="col-xs-10 col-sm-10">
-                                    <f:option value="true" label="Active"/>
-                                    <f:option value="false" label="Inactive"/>
+                                    <f:option value="true" label="Hiện"/>
+                                    <f:option value="false" label="Ẩn"/>
                                 </f:select>
                         </div>
 

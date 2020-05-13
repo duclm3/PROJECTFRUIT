@@ -168,7 +168,7 @@
           
         <!-- Col- Main -->   
           <article class="col-main">
-            <h2 class="page-heading"> <span class="page-heading-title">Regular Fruits</span> </h2>
+            <h2 class="page-heading"> <span class="page-heading-title">Danh mục sản phẩm : ${fruits}</span> </h2>
             <div class="display-product-option">
               <div class="pager hidden-xs">
                   <div class="paging container pages" style="margin-left:-90px">
@@ -211,7 +211,7 @@
                             </div>
                           </div>
                           <div class="action">
-                            <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${pro.productId}"><button class="button btn-cart" type="button"><span>Add to Cart</span></button></a>
+                            <a href="<%=request.getContextPath()%>/cartController/addCart.htm?productIdd=${pro.productId}"><button class="button btn-cart" type="button"><span>Thêm vào giỏ</span></button></a>
                           </div>
                         </div>
                       </div>
@@ -499,7 +499,7 @@
                                                     <button onclick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="fa fa-plus">&nbsp;</i></button>
                                                     </div>
                                                 </div>
-                                                <button class="button btn-cart" title="Add to Cart" type="submit">Add to Cart</button>
+                                                <button class="button btn-cart" title="Add to Cart" type="submit">Thêm vào giỏ</button>
                                         </div>
                                     </form>
                                 </div>

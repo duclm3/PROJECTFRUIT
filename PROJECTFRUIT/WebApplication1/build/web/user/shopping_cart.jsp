@@ -157,7 +157,7 @@
                         <td><h2 class="product-name"> <a href="#">${cart.pro.nameProduct}</a></h2></td>
                         <td class="a-center"><a title="Edit item parameters" class="edit-bnt" href="#"></a></td>
                         <td class="a-right"><span class="cart-price"> <span class="price">${cart.pro.price}</span> </span></td>
-                        <td class="a-center movewishlist"><input maxlength="12" class="input-text qty" title="Qty" size="4" value="${cart.qty}" name="quantitys" type="number" max='15' min='1' pattern="[1-15]"></td>
+                        <td class="a-center movewishlist"><input maxlength="12" class="input-text qty" title="Qty" size="4" value="${cart.qty}" name="quantitys" type="number" max='15' min='1' pattern="[1-15]" required="required"></td>
                         <td class="a-right movewishlist"><span class="cart-price"> <span class="price"></span>${cart.qty*cart.pro.price}</span></td>
                         <td class="a-center last"><a class="button remove-item" title="Remove item" href="removeCart.htm?productId=${cart.pro.productId}"><span><span>Remove item</span></span></a></td>
                       </tr>

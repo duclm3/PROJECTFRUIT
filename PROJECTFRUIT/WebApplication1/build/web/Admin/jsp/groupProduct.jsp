@@ -112,21 +112,34 @@
                                 <td>${group.groupId}</td>
                                 <td>${group.groupName}</td>
                                 <td>${group.descriptions}</td>
-                                <td>${group.groupStatus}</td>
-
+                                <td>
+                                <c:set var = "status" value = "${group.groupStatus}"/>
+                                <c:choose>
+                                    <c:when test ="${status=='true'}">
+                                        Hiện
+                                        <br />
+                                    </c:when>
+                                    <c:otherwise>
+                                        Ẩn
+                                        <br />
+                                    </c:otherwise>
+                                </c:choose>    
+                                    
+                                </td>
+                                  
                                 <td>
                                     <div class="hidden-sm hidden-xs action-buttons">
-                                        <a class="link-quickview" data-toggle="modal-id" data-id="${group.groupId}" href='#modal-id'>
+<!--                                        <a class="link-quickview" data-toggle="modal-id" data-id="${group.groupId}" href='#modal-id'>
                                             <i class="ace-icon fa fa-search-plus bigger-130"></i>
-                                        </a>
+                                        </a>-->
 
                                         <a class="green" href="initUpdateGroup.htm?groupId=${group.groupId}">
                                             <i class="ace-icon fa fa-pencil bigger-130"></i>
                                         </a>
 
-                                        <a class="red" href="deleteGroup.htm?groupId=${group.groupId}">
+<!--                                        <a class="red" href="deleteGroup.htm?groupId=${group.groupId}">
                                             <i class="ace-icon fa fa-trash-o bigger-130"></i>
-                                        </a>
+                                        </a>-->
                                     </div>
                                 </td>
                             </tr>

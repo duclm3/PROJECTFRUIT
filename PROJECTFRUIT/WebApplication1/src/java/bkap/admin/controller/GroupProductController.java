@@ -7,8 +7,10 @@ package bkap.admin.controller;
 
 import bkap.admin.model.GroupProductModel;
 import bkap.user.entity.GroupProduct;
+import bkap.user.entity.Product;
 import java.util.List;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -39,12 +41,15 @@ public class GroupProductController {
     }
     
     @RequestMapping(value = "/insertGP")
-    public String insertProduct(GroupProduct newGP){
+    public String insertProduct(GroupProduct newGP,ModelMap model){
         boolean check = gpm.insertGroup(newGP);
         if(check){
             return "redirect:getAll.htm";
         }else{
-            return "Admin/jsp/Srerror";
+            model.addAttribute("duplicateid",newGP.getGroupId());
+            model.addAttribute("newGP",new GroupProduct());
+            model.addAttribute("flagInsert",false);
+            return "Admin/jsp/newGroup";
         }               
     }
     

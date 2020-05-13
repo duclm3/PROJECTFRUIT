@@ -9,9 +9,12 @@ import bkap.user.entity.GroupProduct;
 import bkap.user.entity.Orders;
 import bkap.user.entity.Product;
 import bkap.user.util.HibernateUtil;
+import java.sql.CallableStatement;
 import java.util.List;
+import javax.persistence.ParameterMode;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.procedure.ProcedureCall;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -128,5 +131,51 @@ public class ProductModel {
         session.getTransaction().commit();
         session.close();
         return order;
+    }
+    public String getMaxIdPro(){
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.getTransaction().begin();
+        String hql = "select MAX(productId) from Product";
+        Query query = session.createQuery(hql);
+        String idMax = (String)query.uniqueResult();
+        session.getTransaction().commit();
+        session.close();
+        return idMax;
+    }
+    public boolean insertProcedure(Product proNew){
+        boolean check = true;
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.getTransaction().begin();
+        Query query = null;
+       
+        try {
+            query = session.createSQLQuery("CALL SP_INSERT_1(:ProductName,:Price,:GroupProduct,:ImageLink,:Description,:Quantity,:ProStatus)").addEntity(Product.class);
+            query.setParameter("ProductName", proNew.getNameProduct());
+            query.setParameter("Price", proNew.getPrice());
+            query.setParameter("GroupProduct", proNew.getGroupProduct());
+            query.setParameter("ImageLink", proNew.getImageLink());
+            query.setParameter("Description", proNew.getDescriptions());
+            query.setParameter("Quantity", proNew.getQuantity());
+            query.setParameter("ProStatus", proNew.getProStatus());
+            query.executeUpdate();
+            session.getTransaction().commit();
+        } catch (Exception e) {
+             e.printStackTrace();          
+             check = false;
+             session.getTransaction().rollback();            
+        }
+        
+        session.close();
+        return check;
+    }
+    public static void main(String[] args) {
+        ProductModel prm = new ProductModel();
+        Product pr1 = new Product();
+        pr1.setNameProduct("A");
+        pr1.setPrice(1.0);
+        
+        
+        boolean check = prm.insertProcedure(pr1);
+        System.out.println(check);
     }
 }
