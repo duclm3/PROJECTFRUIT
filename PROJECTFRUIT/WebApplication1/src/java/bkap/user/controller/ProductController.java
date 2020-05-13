@@ -135,11 +135,11 @@ public class ProductController {
         ModelAndView mav = new ModelAndView("user/checkout");
         Orders newOrder = new Orders();
         mav.addObject("newOrder",newOrder);
+        mav.addObject("totalAmount",CartController.totalAmount);
         return mav;
     }
     @RequestMapping(value = "/insertOd")
     public String insertOd(Orders newOrder,HttpSession session){
-        
         for (Cart cart : listMiniCart) {
             listNamePro+=cart.getQty()+"-"+cart.getPro().getNameProduct()+"|";
         }

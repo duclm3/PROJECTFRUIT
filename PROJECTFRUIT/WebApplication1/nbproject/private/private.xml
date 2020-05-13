@@ -12,11 +12,9 @@
             <file>file:/H:/BT%20Java/Project/TeamProject/PROJECTFRUIT/WebApplication1/web/Admin/jsp/groupProduct.jsp</file>
         </group>
         <group>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/model/ProductModel.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/entity/Product.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/model/LoginModel.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/admin/model/ProductModel.java</file>
-            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/admin/controller/ProController.java</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/controller/CartController.java</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/src/java/bkap/user/controller/ProductController.java</file>
+            <file>file:/C:/Users/Le%20Minh%20Duc/Desktop/PROJECTFRUITLast/PROJECTFRUIT/WebApplication1/web/user/checkout.jsp</file>
         </group>
     </open-files>
 </project-private>

@@ -193,7 +193,7 @@
                                         </p>
                                         <p class="d-flex">
                                             <span>Phí vận chuyển :</span>
-                                            <span>0.00 VNĐ</span>
+                                            <span>0 VNĐ</span>
                                         </p>
                                         <p class="d-flex">
                                             <span></span>
@@ -202,7 +202,7 @@
                                         <hr>
                                         <p class="d-flex total-price" style="padding-bottom: 17px">
                                             <span>Tổng cộng :</span>
-                                            <span> VNĐ</span>
+                                            <b><span>${totalAmount}VNĐ</span></b>
                                         </p>
                                     </div>
                                 </div>
